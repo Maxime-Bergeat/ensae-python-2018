@@ -3,10 +3,11 @@
 import requests
 import urllib
 import bs4
-
+import os
 
 from urllib import request
 
+os.chdir("C:/Users/maxim/Documents/ensae-python-2018/Data")
 fichier_url = open("liste_urls_haikus_auteurs_franco_V2_20181022.csv", "r")
 url = fichier_url.read().split("\n")
 fichier_url.close()
